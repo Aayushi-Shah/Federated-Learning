@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  edge:
+    build: .
+    # container_name: edge_device
+    volumes:
+      - .:/app  # Mount current directory into /app in the container (optional for development)
+    command: python3 src/train.py
