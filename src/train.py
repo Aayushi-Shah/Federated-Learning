@@ -16,7 +16,7 @@ print("Using device:", device)
 
 # --- Data Generation with 6-Month Simulation ---
 # For 6 months (assuming 180 days), we need 180 * 1440 = 259200 samples.
-data, labels = generate_labeled_temperature_data(num_samples=259200, noise_level=0.5, 
+data, labels = generate_labeled_temperature_data(num_samples=5000, noise_level=0.5, 
                                                    daily_anomaly_fraction=0.02, seasonal_anomaly_fraction=0.1,
                                                    downsample_rate=5)
 window_size = 60  # 60-minute window size
